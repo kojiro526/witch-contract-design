@@ -1,0 +1,14 @@
+nwdiag {
+    default_fontsize = 14
+    network DMZ {
+        address = "192.0.2.0/24"
+
+        WEB [address = "192.0.2.11"];
+    }
+    network DB {
+        address = "10.10.10.0/24"
+
+        WEB [address = "10.10.10.11"];
+        DB [address = "10.10.10.21"];
+    }
+}
