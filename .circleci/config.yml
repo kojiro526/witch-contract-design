@@ -19,13 +19,13 @@ jobs:
             apt-get update
             apt-get install -yqq curl git
       - run:
-          build.sh -f -n -r ./template/reference-part-2.docx -o witch-contract-design-${FILENAME_TIMESTAMP}.docx -p "--toc --toc-depth=3 --metadata=confidential=CONFIDENTIAL" ./src/
+          build.sh -f -n -r ./template/reference-part-2.docx -o witch-contract-design_${FILENAME_TIMESTAMP}.docx -p "--toc --toc-depth=3 --metadata=confidential=CONFIDENTIAL" ./src/
       - run:
-          curl https://slack.com/api/files.upload -F token="${SLACK_TOKEN}" -F channels="${SLACK_CHANNEL}" -F title="witch-contract-design ${FILENAME_TIMESTAMP}" -F filename="witch-contract-design-${FILENAME_TIMESTAMP}.docx" -F file=@"$(pwd)/witch-contract-design-${FILENAME_TIMESTAMP}.docx" -F initial_comment="https://bitbucket.org/kojiro526/witch-contract/commits/$(git rev-parse HEAD)"
+          curl https://slack.com/api/files.upload -F token="${SLACK_TOKEN}" -F channels="${SLACK_CHANNEL}" -F title="witch-contract-design ${FILENAME_TIMESTAMP}" -F filename="witch-contract-design_${FILENAME_TIMESTAMP}.docx" -F file=@"$(pwd)/witch-contract-design_${FILENAME_TIMESTAMP}.docx" -F initial_comment="https://github.com/kojiro526/witch-contract-design/commits/$(git rev-parse HEAD)"
       - run:
           name: Move to artifacts
           command: |
             mkdir -p /tmp/artifacts
-            mv witch-contract-design-${FILENAME_TIMESTAMP}.docx /tmp/artifacts
+            mv witch-contract-design_${FILENAME_TIMESTAMP}.docx /tmp/artifacts
       - store_artifacts:
           path: /tmp/artifacts
