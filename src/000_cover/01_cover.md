@@ -4,6 +4,6 @@ subtitle: Ver 1.0.0
 author:
 - ミタキハラシステムズ株式会社
 
-date: 2017-08-11  
+date: 2019-08-12
 toc-title: 目次  
 ...

@@ -10,7 +10,7 @@
 
 [https://github.com/kojiro526/witch-contract-design](https://github.com/kojiro526/witch-contract-design)
 
-Excelを使ったドキュメント作成に疲弊している世のSE・SIの皆さまが、軽量マークアップ言語[^markup]によるドキュメント作成に手を出す際に、プレーンテキスト（Markdown）でだいたいどの程度の表現が可能なのか[^asciidoc]という参考にしていただけたら幸いです。
+Excelを使ったドキュメント作成に疲弊している世のSE・SIの皆さまが、軽量マークアップ言語によるドキュメント作成に手を出す際に、プレーンテキスト（Markdown）でだいたいどの程度の表現が可能なのか[^asciidoc]という参考にしていただけたら幸いです。
 
 ::: {custom-style="DateName"}
 2019年8月12日
@@ -23,6 +23,5 @@ Kojiro
 [^plantuml]: [http://plantuml.com/ja/](http://plantuml.com/ja/)
 [^nwdiag]: [http://blockdiag.com/ja/nwdiag/index.html](http://blockdiag.com/ja/nwdiag/index.html)
 [^build]: 印刷版は、入稿のために背表紙にあたるページを手で付け加えたりしているため、ソースをビルドした状態とまったく同じにはなりません。
-[^markup]: Mark**down**を軽量**マークアップ**言語に含める妥当性についてのつっこみはご容赦ください。
 [^asciidoc]: もちろん、Markdownにこだわらず、Asciidoctor( [https://asciidoctor.org/](https://asciidoctor.org/) )などを使えばより豊かな表現でドキュメントを書くことができると思います。
 

@@ -1,6 +1,6 @@
 @startuml{er.png}
 
-entity "persons" {
+entity "girls" {
   + id [PK]
   ==
   name : varchar(20)
@@ -18,13 +18,13 @@ entity "persons" {
 entity "negotiations" {
   + id [PK]
   ==
-  #person_id : int <<FK>>
+  #girl_id : int <<FK>>
   negotiated_at : date
   body : text
   created : datetime
   modified : datetime
 }
 
-persons ||--o{ negotiations
+girls ||--o{ negotiations
 
 @enduml
