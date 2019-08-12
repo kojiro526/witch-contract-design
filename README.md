@@ -25,7 +25,7 @@ $ git clone https://github.com/kojiro526/witch-contract-design.git
 $ cd witch-contract-design
 $ dokcer pull kojiro526/pandoc-pack
 $ docker run --rm -it -v $(pwd):/work kojiro526/pandoc-pack \
-  build.sh -f -n -r ./template/reference-part-2.docx \
+  build.sh -f -n -r ./template/reference-part.docx \
   -o ./tmp/witch-contract-design.docx \
   -p "--toc --toc-depth=3 --metadata=confidential=CONFIDENTIAL" ./src/
 ```
